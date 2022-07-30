@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let user of userList">
+    <p>Name: {{ user.name }}</p>
+    <p>email: {{ user.email }}</p>
+    <button (click)="seeUserDetails(user.id)">View Albums</button>
+  </li>
+</ul>
